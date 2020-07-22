@@ -1,3 +1,81 @@
-body{
-    background-color:rgb(19, 19, 82);
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    background-color: #ebecf1;
+    height: 100%;
+    width:50%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{ 
+    color: #1b262c;
+    font-size:40px;
+    width: 100%;
+    text-align:center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px grey;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    
+}
+#discription{
+    padding-bottom:20px;
+    border-bottom: solid 1px grey;
+    padding-left: 10px;
+}
+#discription input,#category select{
+    outline:none;
+    border:none;
+    background-color: #ebecf1;
+    width: 100%;
+    font-size:15px;
+}
+ label{
+    color: #1b262c;
+    font-weight: bold;
+    font-size:17.5px;
+}
+#catDate{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom:20px;
+    border-bottom: solid 1px grey;
+}
+#category,#date
+{
+    width: 47.5%;
+}
+
+#date input{
+    outline: none;
+    border:none;
+    background-color: #ebecf1;
+    font-size:15px;
+    padding-right: 15px;
+}
+#add{
+    width:100%;
+    text-align: center;
+    border-bottom: solid 1px grey;
+}
+#add button{
+    color: whitesmoke;
+    font-size: 25px;
+    background-color: #383e56;
+    outline: none;
+    width: 200px;
+    height:50px;
+    margin-top:25px;
+    margin-bottom:25px;
 }
