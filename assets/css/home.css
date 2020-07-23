@@ -79,3 +79,59 @@ form{
     margin-top:25px;
     margin-bottom:25px;
 }
+ul{
+    list-style: none;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+li input{
+    width:10%;
+    margin-top: 1em;
+}
+input:checked + div label {
+    background: #f9f9f9;
+    text-decoration: line-through;
+}
+li div{
+    width: 50%;
+}
+#catdel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#cattext{
+    text-align: center;
+    color: whitesmoke;
+    background-color: #3b2e5a;
+    width: 125px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height:40px;
+    vertical-align: middle;
+    font-size:20px;
+}
+#cattext p{
+    margin-top:.3em;
+    font-weight: bold;
+}
+
+#deleteBtn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 125px;
+    height:40px;
+    font-size:20px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #900d0d;
+}
+#deleteBtn i{
+    margin-top:.5em;
+}
+#deleteBtn:hover{
+    background-color: #cf1b1b;
+}

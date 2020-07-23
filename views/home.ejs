@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f8650f2e71.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
         <h1>TODO List</h1>
-        <form action="" method="post">
+        <form action="/add_todo" method="post">
             <div id="discription">
                 <label for="work">Description</label>
                 <input type="text" name="todo" placeholder="What do you need to do?"required>
@@ -27,7 +28,7 @@
                 </div>
                 <div id="date">
                     <label>Due Date</label><br>
-                    <input type="date" name="date" required>
+                    <input type="date" name="date" >
                 </div>
             </div>
             <div id="add">
@@ -36,6 +37,33 @@
                 </button>
             </div>
         </form>
+        <ul>
+            <% for(let i of todo_list){ %>
+                <li id="listItems">
+                    <input type="checkbox">
+                    <div>
+                        <label id="task"><%=i.description%></label><br>
+                        <p><i class="far fa-calendar">
+                        </i><%if(i.duedate!=''){%>
+                            <%=i.duedate%>
+                        <% }else {%>
+                            <%="NO DueDate" %> 
+                        <% } %> 
+                        </p>
+                    </div>
+                    <div id="catdel">
+                        <div id="cattext">
+                            <p >
+                                <%=i.category%>
+                            </p>
+                        </div>
+                        <a id="deleteBtn" href="/delete_todo/<%=i._id%>">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </div>    
+                </li>
+            <%} %> 
+        </ul>
     </div>
     <script type="text/javascript" src="/js/home.js"></script>
 </body>
