@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="container">
+<!--Input form part  -->
         <h1>TODO List</h1>
         <form action="/add_todo" method="post">
             <div id="discription">
@@ -37,6 +38,7 @@
                 </button>
             </div>
         </form>
+<!-- list Display part -->
         <ul>
             <% for(let i of todo_list){ %>
                 <li id="listItems">

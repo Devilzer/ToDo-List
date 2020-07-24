@@ -72,7 +72,7 @@ form{
 #add button{
     color: whitesmoke;
     font-size: 25px;
-    background-color: #383e56;
+    background-color: #1b262c;
     outline: none;
     width: 200px;
     height:50px;
@@ -80,7 +80,7 @@ form{
     margin-bottom:25px;
 }
 #add button:hover{
-    background-color: #444b68;
+    background-color: #24333b;
 }
 #add button:hover i{
     font-size:28px;
@@ -111,8 +111,8 @@ li div{
 }
 #cattext{
     text-align: center;
-    color: whitesmoke;
-    background-color: #3b2e5a;
+    color: #1b262c;
+    border: solid 2.5px #221f3b;
     width: 125px;
     margin-top: 5px;
     margin-bottom: 5px;

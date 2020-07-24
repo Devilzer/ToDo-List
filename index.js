@@ -4,8 +4,10 @@ const path = require('path');
 const db = require('./config/mongoose');
 const Todo = require('./models/todo');
 
+
 const app = express();
 
+//setting up views
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 app.use(express.urlencoded());
@@ -53,7 +55,7 @@ app.get('/',(req,res)=>{
 });
 
 
-
+//starting the server
 app.listen(port, (err)=>{
     if(err){
         console.log("error in running the server");
