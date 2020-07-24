@@ -79,6 +79,12 @@ form{
     margin-top:25px;
     margin-bottom:25px;
 }
+#add button:hover{
+    background-color: #444b68;
+}
+#add button:hover i{
+    font-size:28px;
+}
 ul{
     list-style: none;
 }
@@ -134,4 +140,7 @@ li div{
 }
 #deleteBtn:hover{
     background-color: #cf1b1b;
+}
+#deleteBtn:hover i{
+    font-size:22px;
 }
