@@ -30,6 +30,6 @@
         var todayDate = [year, month, day].join('-');
         console.log(todayDate);
         datePicker.setAttribute("min", todayDate);
-        // $("#date").attr("max", todayDate);
+
         
           
